@@ -1,0 +1,33 @@
+<div class="search-container">
+    <h2>Book Search</h2>
+    
+    <!-- Search Bar -->
+    <form (ngSubmit)="onSearch()">
+      <input 
+        type="text" 
+        [(ngModel)]="searchTerm" 
+        name="searchTerm" 
+        placeholder="Enter title, author, or ISBN" 
+        required />
+      <button type="submit">Search</button>
+    </form>
+  
+    <!-- Loading Indicator -->
+    <div *ngIf="loading" class="loading-indicator">Loading...</div>
+  
+    <!-- Book List -->
+    <div *ngIf="books.length > 0" class="book-list">
+      <div *ngFor="let book of books" class="book-card">
+        <h3>{{ book.volumeInfo.title }}</h3>
+        <p><strong>Author:</strong> {{ book.volumeInfo.authors?.join(', ') }}</p>
+        <img [src]="book.volumeInfo.imageLinks?.thumbnail" alt="{{ book.volumeInfo.title }}">
+        <p>{{ book.volumeInfo.description || 'No description available.' }}</p>
+      </div>
+    </div>
+  
+    <!-- No Results Message -->
+    <div *ngIf="books.length === 0 && !loading">
+      <p>No books found. Try searching for something else!</p>
+    </div>
+  </div>
+  
