@@ -23,14 +23,14 @@ An Angular application that allows users to search for books using the **Google 
 3. **Run**
    ng serve
 ---
-##📌 Usage
+## 📌 Usage
 1. Open the application in your browser.
 2. Enter a book title, author, or ISBN in the search bar.
 3. Click the Search button.
 4. View the results, including book titles, authors, and descriptions.
 5. If no results are found, a "No books found" message is displayed.
 ---
-##🔗 API Integration
+## 🔗 API Integration
 This application uses the Google Books API to fetch book data dynamically.
 
 **API Endpoint Used:**
@@ -39,7 +39,7 @@ Example Request:
 https://www.googleapis.com/books/v1/volumes?q=harry+potter
 The response includes book details like title, author, description, and cover image.
 
-##Project Structure
+## Project Structure
 📂 book-search-app
  ├── 📁 src
  │   ├── 📁 app
