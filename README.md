@@ -34,21 +34,36 @@ An Angular application that allows users to search for books using the **Google 
 This application uses the Google Books API to fetch book data dynamically.
 
 **API Endpoint Used:**
+
 https://www.googleapis.com/books/v1/volumes?q={searchTerm}
+
 Example Request:
+
 https://www.googleapis.com/books/v1/volumes?q=harry+potter
+
 The response includes book details like title, author, description, and cover image.
 
 ## Project Structure
 📂 book-search-app
+
  ├── 📁 src
+ 
  │   ├── 📁 app
+ 
  │   │   ├── 📁 book-search
+ 
  │   │   │   ├── 📄 book-search.component.ts
+ 
  │   │   │   ├── 📄 book-search.component.html
+ 
  │   │   │   ├── 📄 book-search.component.css
+ 
  │   │   ├── 📄 app.module.ts
+ 
  │   ├── 📄 index.html
+ 
  ├── 📄 package.json
+ 
  ├── 📄 angular.json
+ 
  ├── 📄 README.md
