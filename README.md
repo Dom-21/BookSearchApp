@@ -67,3 +67,12 @@ The response includes book details like title, author, description, and cover im
  ├── 📄 angular.json
  
  ├── 📄 README.md
+
+---
+
+## 👨‍💻 Technologies Used
+1. Angular 19
+2. Google Books API
+3. Tailwind CSS
+4. TypeScript
+5. RxJS (for HTTP requests)
